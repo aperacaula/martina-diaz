@@ -3,6 +3,8 @@ import styles from '../styles/home.module.scss';
 import Link from 'next/link';
 import Layout from '../components/Layout/Layout';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFire, faFireFlameSimple, faFireFlameCurved, faMountain, faCopyright } from '@fortawesome/free-solid-svg-icons';
 
 const Home: React.FC = () => {
   return (
@@ -27,52 +29,78 @@ const Home: React.FC = () => {
           </h1>
 
           <p className={styles.description}>
-            No pain no gain. Sweat is fat crying.<br />
-            You are a legend. Never change.
+            Cada persona es única y por ello necesita una rutina personalizada <br />
+            adaptada 100% a sus necesidades, capacidades y aptitudes.
           </p>
         </div>
 
         <div className={styles.grid}>
-          <Link href="/entrenamientos/basic" className={styles.card}>
-            <h3>Basic &rarr;</h3>
+          <Link href="/entrenamientos/fitness-basic" className={styles.card}>
+            <div className={styles.trainingIcon}>
+              <FontAwesomeIcon icon={faFireFlameSimple} />
+            </div>
+            <h3>FITNESS Basic</h3>
             <p>
-              Entrenamiento Básico. Entrenamiento Básico. Entrenamiento Básico
-              Entrenamiento Básico. Entrenamiento Básico. Entrenamiento Básico
+              Perfecto para los recién llegados al fitness, este plan te permite introducirte en el mundo del fitness.
             </p>
           </Link>
 
           <Link
-            href="/entrenamientos/intermediate"
+            href="/entrenamientos/fitness-pro"
             className={styles.card}
           >
-            <h3>Intermediate &rarr;</h3>
+            <div className={styles.trainingIcon}>
+              <FontAwesomeIcon icon={faFire} />
+            </div>
+            <h3>FITNESS Pro</h3>
             <p>
-              Entrenamiento Intermedio. Entrenamiento Intermedio. Entrenamiento Intermedio.
-              Entrenamiento Intermedio. Entrenamiento Intermedio. Entrenamiento Intermedio.
+              Ideal personas que tienen experiencia en fitness, este plan mejora su rutina con entrenamiento personalizado, con objetivos más concretos.
             </p>
           </Link>
 
           <Link
-            href="/entrenamientos/elite"
+            href="/entrenamientos/deportes-basic"
             className={styles.card}
           >
-            <h3>Elite &rarr;</h3>
+            <div className={styles.trainingIcon}>
+              <FontAwesomeIcon icon={faFireFlameCurved} />
+            </div>
+            <h3>DEPORTE Basic</h3>
             <p>
-              Entrenamiento Pro. Entrenamiento Pro. Entrenamiento Pro.
-              Entrenamiento Pro. Entrenamiento Pro. Entrenamiento Pro.
+              Diseñado para personas deportistas que no cuentan con las herramientas para poder entrenar en base a su modalidad deportiva.
+            </p>
+          </Link>
+
+          <Link
+            href="/entrenamientos/deportes-pro"
+            className={styles.card}
+          >
+            <div className={styles.trainingIcon}>
+              <FontAwesomeIcon icon={faMountain} />
+            </div>
+            <h3>DEPORTE Pro</h3>
+            <p>
+              Diseñado para deportistas y/o atletas profesionales o semi profesionales que de forma individual quieran optimizar su rendimiento.
             </p>
           </Link>
 
         </div>
+        <div className={styles.quote}>
+          <div className={styles.openingQuote}>“</div>
+          <p>
+            Acabar agotado no es sinónimo de haber realizado un buen entrenamiento. Como experta en acondicionamiento físico debo concienciar a las personas en la importancia que tiene presentar programas elaborados desde el conocimiento teórico-práctico. Por ello apuesto por los entrenamientos seguros.
+          </p>
+          <div className={styles.closingQuote}>”</div>
+        </div>
         <Link href="/conoceme" className={`${styles.card} ${styles.bigCard}`}>
-          <h3>Conóceme &rarr;</h3>
+          <h3>Conóceme </h3>
           <p>Si quieres saber más sobre mi background o quieres contactarme, haz click aquí </p>
         </Link>
       </main>
 
       <footer className={styles.footer}>
         <p>
-          2024 - Martina Díaz
+          2024 © All Rights Reserved - Martina Díaz
           </p>
       </footer>
     </Layout>

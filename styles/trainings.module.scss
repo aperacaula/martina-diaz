@@ -1,0 +1,13 @@
+@import './_variables.scss';
+
+.container {
+  margin-top: 75px;
+  padding: 0 1rem;
+}
+
+.explanation {
+  max-width: $maxWidth;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}

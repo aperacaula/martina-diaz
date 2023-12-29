@@ -7,9 +7,10 @@ import Link from 'next/link';
 interface AccordionProps {
   title: string;
   options: { label: string; link: string }[];
+  darkMenu?: boolean;
 }
 
-const Accordion: React.FC<AccordionProps> = ({ title, options }) => {
+const Accordion: React.FC<AccordionProps> = ({ title, options, darkMenu }) => {
   const [isHovered, setHovered] = useState(false);
 
   const handleHover = () => {
@@ -25,7 +26,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, options }) => {
         </div>
       </div>
       {isHovered && (
-        <div className={styles.options}>
+        <div className={`${styles.options} ${darkMenu ? styles.darkMenu : ''}`}>
           {options.map(option => <div><Link href={option.link}>{option.label}</Link></div>)}
         </div>
       )}

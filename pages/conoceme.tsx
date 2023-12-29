@@ -2,7 +2,7 @@ import Layout from "../components/Layout/Layout";
 
 const Conoceme: React.FC = () => {
     return (
-        <Layout>
+        <Layout darkMenu={true}>
             <div>Whatever</div>
         </Layout>
     )
