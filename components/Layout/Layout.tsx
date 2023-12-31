@@ -4,9 +4,13 @@ import Menu from '../Menu/Menu';
 interface LayoutProps {
     darkMenu?: boolean;
     children: JSX.Element;
+    seoTitle?: string;
+    seoDescription?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, darkMenu = false }) => {
+const Layout: React.FC<LayoutProps> = (
+    { children, darkMenu = false }
+) => {
     return (
         <div className={styles.globalContainer}>
             <Menu darkMenu={darkMenu} />
