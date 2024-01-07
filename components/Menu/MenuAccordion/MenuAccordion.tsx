@@ -27,7 +27,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, options, darkMenu }) => {
       </div>
       {isHovered && (
         <div className={`${styles.options} ${darkMenu ? styles.darkMenu : ''}`}>
-          {options.map(option => <div><Link href={option.link}>{option.label}</Link></div>)}
+          {options.map(option => <Link href={option.link}><div>{option.label}</div></Link>)}
         </div>
       )}
     </div>

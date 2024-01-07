@@ -18,16 +18,20 @@ const FitnessPro: React.FC = () => {
             <Image src="/trainings/fitness-basic/fitness-basic-1.jpg" width={600} height={500} alt="Fitness Pro" loading="lazy" />
             <div className={styles.text}>
               <p>
-                Ideal para aquellas personas que tienen experiencia en fitness, este plan mejora su rutina con entrenamiento personalizado, con objetivos más concretos. Elige esto para llevar tu condición física al siguiente nivel.
+                Ideal para aquellas personas que tienen experiencia en fitness. Este plan mejora tu rutina con entrenamiento personalizado, objetivos más concretos y con un seguimiento más detallado y preciso.
               </p>
+              <p>
+                Comenzamos con una encuesta sobre el estilo de vida, tu historial y tus objetivos. Seguimos con la realización de unos test para una valoración inicial y un control en la composición corporal (opcional).
+              </p>
+              <p>¡Elige este plan para llevar tu condición física al siguiente nivel!</p>
               <ul>
+                <li>Entrega de una planificación semanal.</li>
                 <li>Entreno personalizado.</li>
                 <li>Sesiones adaptadas a tu nivel.</li>
-                <li>Enfocado 100% a su objetivo personal.</li>
-                <li>Entrega de una planificación mensual.</li>
-                <li>4 sesiones de entrenamientos por semana.</li>
-                <li>Feedback y contacto semanal.</li>
+                <li>Enfocado 100% a tus objetivos.</li>
+                <li>Feedback individualizado.</li>
               </ul>
+              <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
             </div>
           </div>
         </div>

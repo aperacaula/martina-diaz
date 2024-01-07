@@ -33,10 +33,13 @@ const Menu: React.FC<MenuProps> = ({ darkMenu }) => {
   return (
     <div className={`${styles.container} ${isSticky ? styles.sticky : ''} ${darkMenu ? styles.darkMenu : ''}`}>
       <section className={styles.logo}>
-        <img src="/logo.png" />
+        <Link href="/">
+          <img src="/logo.png" />
+        </Link>
       </section>
       <nav className={styles.menuItems}>
         <Accordion title="Entrenamientos" options={trainingOptions} darkMenu={darkMenu} />
+        <div className={styles.menuItem}><Link href="/tarifas">Tarifas</Link></div>
         <div className={styles.menuItem}><Link href="/conoceme">Conóceme</Link></div>
       </nav>
     </div>

@@ -70,38 +70,34 @@
   background-color: $white;
 
   h3, svg {
-    color: #f79d27;
+    color: $orange;
   }
 
 }
-.differentTitle {
+.deportesCard {
   h3, svg {
-    color: $black !important;
+    color: $tertiary !important;
   }
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: $white;
-  background-color: $primary;
-  h3, svg {
-    color: $white;
-  }
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.25rem;
-
-}
-
 
 .card p {
   margin: 0;
   font-size: $xsmallFont;
   line-height: 1.5;
   flex-grow: 1;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: $white;
+  background: linear-gradient($white, $primary);
+}
+
+.card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+
 }
 
 .quote {

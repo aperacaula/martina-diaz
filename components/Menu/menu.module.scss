@@ -16,7 +16,7 @@
 
 .darkMenu {
   background-color: $primary;
-  color: $tertiary;
+  color: $white;
 }
 
 .logo {
@@ -43,5 +43,15 @@
   opacity: 95%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0 0.5rem;
-  color: $tertiary;
+  color: $white;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    max-height: 60%;
+  }
+
+  .menuItem {
+    padding: 5px;
+  }
 }

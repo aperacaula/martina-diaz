@@ -22,18 +22,17 @@ const DeportesPro: React.FC = () => {
                             </p>
                             <p>
                                 A su vez educamos a su cuerpo con ejercicios tanto complementarios como compensatorios para evitar desequilibrios musculares debidos a las demandas físicas del propio deporte y creamos planes preventivos para evitar lesiones.
-                            <strong>Te guiamos para conseguir tu mejor versión</strong>
                             </p>
                             <ul>
+                                <li>Entrega de una planificación semanal.</li>
                                 <li>Entreno personalizado.</li>
                                 <li>Enfocado 100% a sacar el máximo rendimiento personal.</li>
                                 <li>Sesiones adaptadas a tu deporte.</li>
                                 <li>Sesiones preventivas de lesiones en base al deporte que practicas.</li>
                                 <li>Trabajo complementario y compensatorio.</li>
-                                <li>Entrega de una planificación mensual. </li>
-                                <li>4 sesiones de entrenamientos por semana.</li>
-                                <li>Feedback y contacto semanal.</li>
+                                <li>Feedback individualizado.</li>
                             </ul>
+                            <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
                         </div>
                     </div>
                 </div>

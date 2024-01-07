@@ -26,13 +26,13 @@ const FitnessBasic: React.FC = () => {
               <p>Atendemos a todos los niveles, estableciendo una base para seguir su progreso. Desde principiantes hasta avanzados, nuestras evaluaciones de condición física garantizan mejoras visibles y mensurables <strong>en relación a su estado de salud.</strong>
               </p>
               <ul>
+                <li>Entrega de una planificación mensual. </li>
                 <li>Entreno personalizado.</li>
                 <li>Sesiones adaptadas a tu nivel.</li>
                 <li>Enfocado 100% a su objetivo personal.</li>
-                <li>Entrega de una planificación mensual.</li>
-                <li>2 sesiones de entrenamientos por semana.</li>
-                <li>Feedback y contacto semanal.</li>
+                <li>Feedback individualizado.</li>
               </ul>
+              <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
             </div>
             <Image src="/trainings/fitness-basic/fitness-basic-1.jpg" width={600} height={500} alt="Fitness Basic" loading="lazy" />
           </div>

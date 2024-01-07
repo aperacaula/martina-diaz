@@ -60,12 +60,12 @@ const Home: React.FC = () => {
 
           <Link
             href="/entrenamientos/deportes-basic"
-            className={`${styles.card} ${styles.differentTitle}`}
+            className={`${styles.card} ${styles.deportesCard}`}
           >
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faFireFlameCurved} />
             </div>
-            <h3 className={styles.differentTitle}>DEPORTE Basic</h3>
+            <h3 className={styles.deportesCard}>DEPORTE Basic</h3>
             <p>
               Diseñado para personas deportistas que no cuentan con las herramientas para poder entrenar en base a su modalidad deportiva.
             </p>
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
 
           <Link
             href="/entrenamientos/deportes-pro"
-            className={`${styles.card} ${styles.differentTitle}`}
+            className={`${styles.card} ${styles.deportesCard}`}
           >
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faMountain} />

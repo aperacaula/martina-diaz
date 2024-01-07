@@ -19,14 +19,18 @@ const DeportesBasic: React.FC = () => {
                             <p>
                                 Diseñado para aquellas personas deportistas que no cuentan con las herramientas para poder entrenar en base a su modalidad deportiva. Este plan ofrece una planificación totalmente enfocada al deporte que practicas, garantizando una mejora de tu rendimiento.
                             </p>
+                            <p>
+                                ¡Te guiamos para conseguir tu mejor versión!
+                            </p>
                             <ul>
+                                <li>+Entrega de una planificación mensual.</li>
                                 <li>Entreno personalizado.</li>
-                                <li>Sesiones adaptadas a tu deporte.</li>
+                                <li>Sesiones enfocadas a tu deporte.</li>
                                 <li>Enfocado a la mejora del rendimiento del deportista.</li>
-                                <li>Entrega de una planificación mensual. </li>
-                                <li>2 sesiones de entrenamientos por semana.</li>
-                                <li>Feedback y contacto semanal.</li>
+                                <li>Trabajo complementario y compensatorio.</li>
+                                <li>Feedback individualizado.</li>
                             </ul>
+                            <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
                         </div>
                         <Image src="/trainings/fitness-basic/fitness-basic-1.jpg" width={600} height={500} alt="Fitness Basic" loading="lazy" />
                     </div>
