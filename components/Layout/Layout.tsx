@@ -3,7 +3,7 @@ import Menu from '../Menu/Menu';
 
 interface LayoutProps {
     darkMenu?: boolean;
-    children: JSX.Element;
+    children: JSX.Element | JSX.Element[];
     seoTitle?: string;
     seoDescription?: string;
 }

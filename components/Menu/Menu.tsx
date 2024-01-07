@@ -9,7 +9,12 @@ const trainingOptions = [
   { label: "Deportes Basic", link: "/entrenamientos/deportes-basic" },
   { label: "Deportes Pro", link: "/entrenamientos/deportes-pro" }]
 
-const Menu: React.FC = ({ darkMenu }) => {
+
+interface MenuProps {
+  darkMenu?: boolean;
+}
+
+const Menu: React.FC<MenuProps> = ({ darkMenu }) => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -31,7 +36,7 @@ const Menu: React.FC = ({ darkMenu }) => {
         <img src="/logo.png" />
       </section>
       <nav className={styles.menuItems}>
-        <Accordion className={styles.menuItem} title="Entrenamientos" options={trainingOptions} darkMenu={darkMenu} />
+        <Accordion title="Entrenamientos" options={trainingOptions} darkMenu={darkMenu} />
         <div className={styles.menuItem}><Link href="/conoceme">Conóceme</Link></div>
       </nav>
     </div>
