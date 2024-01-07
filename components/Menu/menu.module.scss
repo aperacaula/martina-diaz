@@ -15,7 +15,8 @@
 }
 
 .darkMenu {
-  background-color: $black;
+  background-color: $primary;
+  color: $tertiary;
 }
 
 .logo {
@@ -39,8 +40,8 @@
   position: fixed;
   top: 0;
   background-color: $primary;
-  opacity: 90%;
+  opacity: 95%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 0 0.5rem;
-  color: $black;
+  color: $tertiary;
 }

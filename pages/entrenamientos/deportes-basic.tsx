@@ -1,12 +1,16 @@
 import Layout from "../../components/Layout/Layout";
 import styles from "../../styles/trainings.module.scss";
 import Image from "next/image";
+import Head from "next/head";
 
 const DeportesBasic: React.FC = () => {
     return (
         <Layout
             darkMenu={true}
         >
+            <Head>
+                <title>Deportes Basic</title>
+            </Head>
             <div className={styles.container}>
                 <h1>Deportes Basic training</h1>
                 <div className={styles.explanation}>

@@ -20,24 +20,28 @@
     top: 100%;
     right: 10px;
     display: none;
-    border: 1px solid #ccc;
+    border: 1px solid $primary;
     border-radius: 5%;
+    opacity: 98% !important;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     div {
       padding: 10px;
       &:hover {
-        background-color: $primary;
+        background-color: $secondary;
+        border-radius: 8%;  
+        // seleccionar aqui la opacity del padre
+        opacity: 1;
       }
     }
   }
 
   &.hovered .options {
     display: block;
-    background-color: $black;
+    background-color: $primary;
   }
-
+  
   .darkMenu {
-    background-color: $black;
+    background-color: $secondary;
   }
 }

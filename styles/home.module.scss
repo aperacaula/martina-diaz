@@ -2,7 +2,8 @@
 
 .main {
   width: 100%;
-  max-width: $maxWidth;  
+  max-width: $maxWidth;
+  margin-bottom: 40px; 
 }
 
 .container {
@@ -67,6 +68,16 @@
   align-items: center;
   text-align: center;
   background-color: $white;
+
+  h3, svg {
+    color: #f79d27;
+  }
+
+}
+.differentTitle {
+  h3, svg {
+    color: $black !important;
+  }
 }
 
 .card:hover,
@@ -74,12 +85,17 @@
 .card:active {
   color: $white;
   background-color: $primary;
+  h3, svg {
+    color: $white;
+  }
 }
 
 .card h3 {
   margin: 0 0 1rem 0;
   font-size: 1.25rem;
+
 }
+
 
 .card p {
   margin: 0;
@@ -93,7 +109,7 @@
   justify-content: center;
   text-align: center;
   font-size: $mediumFont;
-  margin: 4rem 0;
+  margin: 2rem 0;
   .openingQuote {
     font-size: $xxlargeFont;
   }
@@ -128,9 +144,6 @@
   }
 }
 
-.footer {
-  font-size: $xsmallFont;
-}
 
 @media (max-width: 600px) {
   .grid {

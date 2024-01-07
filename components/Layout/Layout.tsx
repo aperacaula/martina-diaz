@@ -15,6 +15,11 @@ const Layout: React.FC<LayoutProps> = (
         <div className={styles.globalContainer}>
             <Menu darkMenu={darkMenu} />
             {children}
+            <footer className={styles.footer}>
+                <p>
+                    2024 © All Rights Reserved - Martina Díaz
+                </p>
+            </footer>
         </div>
     );
 }

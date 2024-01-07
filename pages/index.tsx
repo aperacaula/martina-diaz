@@ -60,12 +60,12 @@ const Home: React.FC = () => {
 
           <Link
             href="/entrenamientos/deportes-basic"
-            className={styles.card}
+            className={`${styles.card} ${styles.differentTitle}`}
           >
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faFireFlameCurved} />
             </div>
-            <h3>DEPORTE Basic</h3>
+            <h3 className={styles.differentTitle}>DEPORTE Basic</h3>
             <p>
               Diseñado para personas deportistas que no cuentan con las herramientas para poder entrenar en base a su modalidad deportiva.
             </p>
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
 
           <Link
             href="/entrenamientos/deportes-pro"
-            className={styles.card}
+            className={`${styles.card} ${styles.differentTitle}`}
           >
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faMountain} />
@@ -97,12 +97,6 @@ const Home: React.FC = () => {
           <p>Si quieres saber más sobre mi background o quieres contactarme, haz click aquí </p>
         </Link>
       </main>
-
-      <footer className={styles.footer}>
-        <p>
-          2024 © All Rights Reserved - Martina Díaz
-          </p>
-      </footer>
     </Layout>
   );
 }

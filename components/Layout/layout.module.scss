@@ -1,7 +1,17 @@
+@import '../../styles/_variables.scss';
+
 .globalContainer {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+
+.footer {
+  font-size: $xxsmallFont;
+  position: absolute;
+  bottom: 0;
 }
