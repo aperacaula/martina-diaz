@@ -5,6 +5,8 @@ import Layout from '../components/Layout/Layout';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFire, faFireFlameSimple, faFireFlameCurved, faMountain, faCopyright } from '@fortawesome/free-solid-svg-icons';
+import whatsapp from "../public/icons/icons8-whatsapp.svg";
+import instagram from "../public/icons/icons8-instagram.svg";
 
 const Home: React.FC = () => {
   return (
@@ -92,10 +94,10 @@ const Home: React.FC = () => {
           </p>
           <div className={styles.closingQuote}>”</div>
         </div>
-        <Link href="/conoceme" className={`${styles.card} ${styles.bigCard}`}>
-          <h3>Conóceme </h3>
-          <p>Si quieres saber más sobre mi background o quieres contactarme, haz click aquí </p>
-        </Link>
+        <div className={styles.contact}>
+          <a><img src={whatsapp} /></a>
+          <a><img src={instagram} /></a>
+        </div>
       </main>
     </Layout>
   );

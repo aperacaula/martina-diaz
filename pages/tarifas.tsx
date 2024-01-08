@@ -7,7 +7,7 @@ const Conoceme: React.FC = () => {
     return (
         <Layout darkMenu={true}>
             <div className={styles.container}>
-                <Image src="/tarifas.png" width={600} height={500} />
+                <Image alt="Tarifas" src="/tarifas.png" width={600} height={500} />
             </div>
         </Layout>
     )
