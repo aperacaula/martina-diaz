@@ -32,11 +32,9 @@ const Menu: React.FC<MenuProps> = ({ darkMenu }) => {
 
   return (
     <div className={`${styles.container} ${isSticky ? styles.sticky : ''} ${darkMenu ? styles.darkMenu : ''}`}>
-      <section className={styles.logo}>
-        <Link href="/">
-          <img src="/logo.png" />
-        </Link>
-      </section>
+      <Link href="/" className={styles.logo}>
+        <img src="/logo.png" />
+      </Link>
       <nav className={styles.menuItems}>
         <Accordion title="Entrenamientos" options={trainingOptions} darkMenu={darkMenu} />
         <div className={styles.menuItem}><Link href="/tarifas">Tarifas</Link></div>

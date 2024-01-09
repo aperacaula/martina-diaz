@@ -2,6 +2,9 @@ import Layout from "../../components/Layout/Layout";
 import styles from "../../styles/trainings.module.scss";
 import Image from "next/image";
 import Head from "next/head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { faBackward } from "@fortawesome/free-solid-svg-icons";
 
 const DeportesBasic: React.FC = () => {
     return (
@@ -35,6 +38,12 @@ const DeportesBasic: React.FC = () => {
                         <Image src="/trainings/fitness-basic/fitness-basic-1.jpg" width={600} height={500} alt="Fitness Basic" loading="lazy" />
                     </div>
                 </div>
+                <Link className={styles.goBack} href="/">
+                    <div className={styles.icon}>
+                        <FontAwesomeIcon icon={faBackward} size="sm" />
+                    </div>
+                    Volver
+                </Link>
             </div>
         </Layout>
     )

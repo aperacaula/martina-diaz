@@ -5,8 +5,6 @@ import Layout from '../components/Layout/Layout';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFire, faFireFlameSimple, faFireFlameCurved, faMountain, faCopyright } from '@fortawesome/free-solid-svg-icons';
-import whatsapp from "../public/icons/icons8-whatsapp.svg";
-import instagram from "../public/icons/icons8-instagram.svg";
 
 const Home: React.FC = () => {
   return (
@@ -93,10 +91,6 @@ const Home: React.FC = () => {
             Acabar agotado no es sinónimo de haber realizado un buen entrenamiento. Como experta en acondicionamiento físico debo concienciar a las personas en la importancia que tiene presentar programas elaborados desde el conocimiento teórico-práctico. Por ello apuesto por los entrenamientos seguros.
           </p>
           <div className={styles.closingQuote}>”</div>
-        </div>
-        <div className={styles.contact}>
-          <a><img src={whatsapp} /></a>
-          <a><img src={instagram} /></a>
         </div>
       </main>
     </Layout>

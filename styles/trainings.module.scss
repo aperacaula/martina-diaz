@@ -17,11 +17,25 @@
 
 .textAndImage {
   display: flex;
-  gap: 1.5rem;
+  gap: 3rem;
 }
 
 .remark {
   font-size: $xsmallFont;
+}
+
+.goBack {
+  margin-top: 5vh;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 10px;
 }
 
 @media (max-width: 600px) {

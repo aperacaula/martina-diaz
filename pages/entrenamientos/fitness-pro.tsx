@@ -2,6 +2,9 @@ import Layout from "../../components/Layout/Layout";
 import styles from "../../styles/trainings.module.scss";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBackward } from "@fortawesome/free-solid-svg-icons";
 
 const FitnessPro: React.FC = () => {
   return (
@@ -34,6 +37,12 @@ const FitnessPro: React.FC = () => {
               <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
             </div>
           </div>
+          <Link className={styles.goBack} href="/">
+            <div className={styles.icon}>
+              <FontAwesomeIcon icon={faBackward} size="sm" />
+            </div>
+            Volver
+          </Link>
         </div>
       </div>
     </Layout>

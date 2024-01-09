@@ -2,6 +2,9 @@ import Layout from "../../components/Layout/Layout";
 import styles from "../../styles/trainings.module.scss";
 import Image from "next/image";
 import Head from "next/head";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBackward } from "@fortawesome/free-solid-svg-icons";
 
 const DeportesPro: React.FC = () => {
     return (
@@ -36,6 +39,12 @@ const DeportesPro: React.FC = () => {
                         </div>
                     </div>
                 </div>
+                <Link className={styles.goBack} href="/">
+                    <div className={styles.icon}>
+                        <FontAwesomeIcon icon={faBackward} size="sm" />
+                    </div>
+                    Volver
+                </Link>
             </div>
         </Layout>
     )
