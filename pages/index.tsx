@@ -29,6 +29,18 @@ const Home: React.FC = () => {
       <Head>
         <title>Martina Díaz</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Entrenadora fitness con planes de entrenamiento 100% online."
+        />
+        <meta
+          property="og:description"
+          content="Alcanza tu mejor versión!"
+        />
+        <meta
+          property="og:image"
+          content="https://martinadiaz.es/_next/image?url=%2Fprofile.png&w=640&q=75"
+        />
       </Head>
 
       <main className={styles.main}>
@@ -38,13 +50,17 @@ const Home: React.FC = () => {
             alt="Background Image"
             fill
             className={styles.image}
+            priority={true}
           />
         </section>
         <section className={styles.intro}>
           <h1 className={styles.title}>
             Martina Díaz
           </h1>
-
+          <h2 className={styles.subtitle}>
+            ENTRENOS PERSONALES
+            <span className={styles.highlighted}> ONLINE</span>
+          </h2>
           <p className={styles.description}>
             Cada persona es única y por ello necesita una rutina personalizada <br />
             adaptada 100% a sus necesidades, capacidades y aptitudes.
