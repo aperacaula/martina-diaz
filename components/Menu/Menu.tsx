@@ -2,6 +2,8 @@ import styles from './menu.module.scss';
 import Accordion from './MenuAccordion/MenuAccordion';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 
 const trainingOptions = [
   { label: "Fitness Basic", link: "/entrenamientos/fitness-basic" },
@@ -11,10 +13,10 @@ const trainingOptions = [
 
 
 interface MenuProps {
-  darkMenu?: boolean;
+  filledMenu?: boolean;
 }
 
-const Menu: React.FC<MenuProps> = ({ darkMenu }) => {
+const Menu: React.FC<MenuProps> = ({ filledMenu }) => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -31,12 +33,12 @@ const Menu: React.FC<MenuProps> = ({ darkMenu }) => {
   }, []);
 
   return (
-    <div className={`${styles.container} ${isSticky ? styles.sticky : ''} ${darkMenu ? styles.darkMenu : ''}`}>
+    <div className={`${styles.container} ${isSticky ? styles.sticky : ''} ${filledMenu ? styles.filledMenu : ''}`}>
       <Link href="/" className={styles.logo}>
-        <img src="/logo.png" />
+        <FontAwesomeIcon icon={faDumbbell} size="3x" />
       </Link>
       <nav className={styles.menuItems}>
-        <Accordion title="Entrenamientos" options={trainingOptions} darkMenu={darkMenu} />
+        <Accordion title="Entrenamientos" options={trainingOptions} filledMenu={filledMenu} />
         <div className={styles.menuItem}><Link href="/tarifas">Tarifas</Link></div>
         <div className={styles.menuItem}><Link href="/conoceme">Conóceme</Link></div>
       </nav>

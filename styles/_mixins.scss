@@ -1,0 +1,5 @@
+@mixin mobile-or-less {
+  @include mobile-or-less {
+    @content
+  }
+}

@@ -9,7 +9,7 @@ import { faBackward } from "@fortawesome/free-solid-svg-icons";
 const FitnessBasic: React.FC = () => {
   return (
     <Layout
-      darkMenu={true}
+      filledMenu={true}
     >
       <Head>
         <title>Fitness Basic</title>

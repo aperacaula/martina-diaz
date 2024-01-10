@@ -4,29 +4,23 @@
 .container {
   margin: 75px 0;
   padding: 0 1rem;
-  h1 {
-    color: $tertiary;
-  }
-}
-
-.explanation {
-  max-width: $maxWidth;
   display: flex;
   flex-direction: column;
-  text-align: justify;
+  align-items: center; 
 }
 
-.textAndImage {
-  display: flex;
-  gap: 3rem;
+.bio {
+  max-width: 60%;
+  text-align: center;
+  margin: 5vh 0;
 }
 
-.remark {
-  font-size: $xsmallFont;
+.profile {
+  border-radius: 50%;
 }
 
 .goBack {
-  margin: 5vh 0;
+  margin: 0 0 5vh 0;
   width: 100%;
   cursor: pointer;
   display: flex;
@@ -35,13 +29,8 @@
   gap: 0.5rem;
 }
 
-.icon {
-  width: 10px;
-}
-
 @include mobile-or-less {
-  .textAndImage {
-    display: flex;
-    flex-direction: column;
+  .bio {
+    max-width: 100%
   }
 }

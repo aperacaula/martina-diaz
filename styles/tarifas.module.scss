@@ -1,6 +1,14 @@
+@import './_mixins.scss';
+
 .container {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@include mobile-or-less {
+  .container {
+    height: 50vh;
+  }
 }
