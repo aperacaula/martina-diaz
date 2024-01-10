@@ -1,5 +1,5 @@
 @import './_variables.scss';
-// @import './_mixins.scss';
+@import './_mixins.scss';
 
 .container {
   margin: 75px 0;
@@ -26,7 +26,7 @@
 }
 
 .goBack {
-  margin: 5vh 0;
+  margin: 10vh 0;
   width: 100%;
   cursor: pointer;
   display: flex;

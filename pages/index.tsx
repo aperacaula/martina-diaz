@@ -5,8 +5,25 @@ import Layout from '../components/Layout/Layout';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFire, faFireFlameSimple, faFireFlameCurved, faMountain, faCopyright } from '@fortawesome/free-solid-svg-icons';
+import whatsapp from '../public/icons/icons8-whatsapp-color.svg';
+import { useState, useEffect } from 'react';
 
 const Home: React.FC = () => {
+  const [reachedEnd, setReachedEnd] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isAtEnd = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      setReachedEnd(isAtEnd);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <Layout>
       <Head>
@@ -15,15 +32,15 @@ const Home: React.FC = () => {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.backgroundImage}>
+        <section className={styles.backgroundImage}>
           <Image
             src="/background.jpg"
             alt="Background Image"
-            layout="fill"
-            objectFit="cover"
+            fill
+            className={styles.image}
           />
-        </div>
-        <div className={styles.intro}>
+        </section>
+        <section className={styles.intro}>
           <h1 className={styles.title}>
             Martina Díaz
           </h1>
@@ -32,9 +49,9 @@ const Home: React.FC = () => {
             Cada persona es única y por ello necesita una rutina personalizada <br />
             adaptada 100% a sus necesidades, capacidades y aptitudes.
           </p>
-        </div>
+        </section>
 
-        <div className={styles.grid}>
+        <section className={styles.grid}>
           <Link href="/entrenamientos/fitness-basic" className={styles.card}>
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faFireFlameSimple} />
@@ -84,15 +101,18 @@ const Home: React.FC = () => {
             </p>
           </Link>
 
-        </div>
-        <div className={styles.quote}>
+        </section>
+        <section className={styles.quote}>
           <div className={styles.openingQuote}>“</div>
           <p>
             Acabar agotado no es sinónimo de haber realizado un buen entrenamiento. Como experta en acondicionamiento físico debo concienciar a las personas en la importancia que tiene presentar programas elaborados desde el conocimiento teórico-práctico. Por ello apuesto por los entrenamientos seguros.
           </p>
           <div className={styles.closingQuote}>”</div>
-        </div>
+        </section>
       </main>
+      <a href="https://wa.me/34695442276" className={`${styles.whatsappSticky} ${reachedEnd ? styles.hidden : ''}`}>
+        <Image alt="Whatsapp-sticky" width={40} height={40} src={whatsapp} />
+      </a>
     </Layout>
   );
 }
