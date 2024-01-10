@@ -31,11 +31,11 @@ const Home: React.FC = () => {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Entrenadora fitness con planes de entrenamiento 100% online."
+          content="Entrenadora personal de fitness y deporte con planes de entrenamiento 100% online."
         />
         <meta
           property="og:description"
-          content="Alcanza tu mejor versión!"
+          content="Entrenos personales online"
         />
         <meta
           property="og:image"
