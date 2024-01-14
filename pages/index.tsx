@@ -58,7 +58,7 @@ const Home: React.FC = () => {
             Martina Díaz
           </h1>
           <h2 className={styles.subtitle}>
-            ENTRENOS PERSONALES
+            ENTRENAMIENTOS PERSONALES
             <span className={styles.highlighted}> ONLINE</span>
           </h2>
           <p className={styles.description}>

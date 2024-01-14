@@ -29,6 +29,10 @@
   gap: 0.5rem;
 }
 
+.icon {
+  width: 10px;
+}
+
 @include mobile-or-less {
   .bio {
     max-width: 100%
