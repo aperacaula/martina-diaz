@@ -2,6 +2,9 @@
 @import './_mixins.scss';
 
 .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: $maxWidth;
   margin-bottom: 40px; 
@@ -115,6 +118,20 @@
 
 }
 
+.stepsContainer {
+  margin: 5vh;
+  font-size: $smallFont;
+  h2 {
+    font-weight: normal;
+  }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .quote {
   display: flex;
   justify-content: center;
@@ -133,6 +150,7 @@
     align-items: flex-end;
   }
 }
+
 
 .bigCard {
   background: rgba($color: $primary, $alpha: 0.2);
@@ -166,7 +184,6 @@
 .whatsappSticky.hidden {
   display: none;
 }
-
 
 @include mobile-or-less {
   .grid {

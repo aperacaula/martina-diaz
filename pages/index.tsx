@@ -61,9 +61,14 @@ const Home: React.FC = () => {
             ENTRENAMIENTOS PERSONALES
             <span className={styles.highlighted}> ONLINE</span>
           </h2>
-          <p className={styles.description}>
+          {/* <p className={styles.description}>
             Cada persona es única y por ello necesita una rutina personalizada <br />
             adaptada 100% a sus necesidades, capacidades y aptitudes.
+          </p> */}
+          <p className={styles.description}>
+            ¿Piensas que un entrenador personal está fuera de tu alcance?
+          <br /> Descubre cómo mis servicios online
+              hacen que la calidad <br /> sea accesible para todas las personas.
           </p>
         </section>
 
@@ -117,6 +122,15 @@ const Home: React.FC = () => {
             </p>
           </Link>
 
+        </section>
+        <section className={styles.stepsContainer}>
+          <h2>Obtén tu rutina personalizada en 4 simples pasos:</h2>
+          <div className={styles.steps}>
+            <p><strong>PASO 1</strong>: <span className={styles.highlighted}>ENCUESTA INICIAL</span> (sobre el estilo de vida, historial y objetivos).</p>
+            <p><strong>PASO 2</strong>: <span className={styles.highlighted}>CONTACTO CLIENTE</span> (para profundizar y aclarar detalles como horarios, gustos, preferencias…).</p>
+            <p><strong>PASO 3</strong>: <span className={styles.highlighted}>VALORACIÓN INICIAL</span> (a través de test de calidad de movimiento, y musculatura estabilizadora; control composición corporal mediante perímetros antropométricos).</p>
+            <p><strong>PASO 4</strong>: <span className={styles.highlighted}>ELABORACIÓN Y ENTREGA</span> (en 2-3 días de tu rutina personalizada).</p>
+          </div>
         </section>
         <section className={styles.quote}>
           <div className={styles.openingQuote}>“</div>
