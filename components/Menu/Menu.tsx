@@ -8,8 +8,8 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 const trainingOptions = [
   { label: "Fitness Basic", link: "/entrenamientos/fitness-basic" },
   { label: "Fitness Pro", link: "/entrenamientos/fitness-pro" },
-  { label: "Deportes Basic", link: "/entrenamientos/deportes-basic" },
-  { label: "Deportes Pro", link: "/entrenamientos/deportes-pro" }]
+  { label: "Sports Basic", link: "/entrenamientos/sports-basic" },
+  { label: "Sports Pro", link: "/entrenamientos/sports-pro" }]
 
 
 interface MenuProps {

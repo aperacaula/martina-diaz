@@ -92,21 +92,21 @@ const Home: React.FC = () => {
           </Link>
 
           <Link
-            href="/entrenamientos/deportes-basic"
-            className={`${styles.card} ${styles.deportesCard}`}
+            href="/entrenamientos/sports-basic"
+            className={`${styles.card} ${styles.sportsCard}`}
           >
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faFireFlameCurved} />
             </div>
-            <h3 className={styles.deportesCard}>DEPORTE Basic</h3>
+            <h3 className={styles.sportsCard}>DEPORTE Basic</h3>
             <p>
               Diseñado para personas deportistas que no cuentan con las herramientas para poder entrenar en base a su modalidad deportiva.
             </p>
           </Link>
 
           <Link
-            href="/entrenamientos/deportes-pro"
-            className={`${styles.card} ${styles.deportesCard}`}
+            href="/entrenamientos/sports-pro"
+            className={`${styles.card} ${styles.sportsCard}`}
           >
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faMountain} />
