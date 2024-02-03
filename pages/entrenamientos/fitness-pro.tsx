@@ -23,11 +23,8 @@ const FitnessPro: React.FC = () => {
               <p>
                 Ideal para aquellas personas que tienen experiencia en fitness. Este plan mejora tu rutina con entrenamiento personalizado, objetivos más concretos y con un seguimiento más detallado y preciso.
               </p>
-              <p>
-                Comenzamos con una encuesta sobre el estilo de vida, tu historial y tus objetivos. Seguimos con la realización de unos test para una valoración inicial y un control en la composición corporal (opcional).
-              </p>
-              <p>¡Elige este plan para llevar tu condición física al siguiente nivel!</p>
-              <ul>
+              <p className={styles.sumUpQuote}>¡Elige este plan para llevar tu condición física al siguiente nivel!</p>
+              <ul className={styles.customList}>
                 <li>Entrega de una planificación semanal.</li>
                 <li>Entreno personalizado.</li>
                 <li>Sesiones adaptadas a tu nivel.</li>
@@ -35,6 +32,7 @@ const FitnessPro: React.FC = () => {
                 <li>Feedback individualizado.</li>
               </ul>
               <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
+              <p className={styles.contactMe}>¡Para más información contacta conmigo!</p>
             </div>
           </div>
           <Link className={styles.goBack} href="/">

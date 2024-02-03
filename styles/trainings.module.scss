@@ -39,6 +39,25 @@
   width: 10px;
 }
 
+.customList {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  font-weight: bold;
+  line-height: 2;
+}
+
+.customList li::before {
+  content: '+ '; /* Set the content to "+" followed by a space */
+  font-weight: bold; /* Make the "+" bold if needed */
+  color: blcak; /* Set the color of the "+" sign */
+  margin-right: 5px; /* Add some spacing between the "+" sign and the text */
+}
+
+.sumUpQuote {
+  font-weight: bold;
+  text-align: center;
+}
+
 @include mobile-or-less {
   .textAndImage {
     display: flex;

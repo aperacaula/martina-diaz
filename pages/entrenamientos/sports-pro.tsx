@@ -24,18 +24,19 @@ const SportsPro: React.FC = () => {
                                 Diseñado para deportistas y/o atletas profesionales o semi profesionales que de forma individual quieran optimizar su rendimiento.  Este plan integral optimiza su rendimiento con un régimen de entrenamiento intenso y un seguimiento muy preciso del progreso.
                             </p>
                             <p>
-                                A su vez educamos a su cuerpo con ejercicios tanto complementarios como compensatorios para evitar desequilibrios musculares debidos a las demandas físicas del propio deporte y creamos planes preventivos para evitar lesiones.
+                                Asimismo, educamos a su cuerpo con ejercicios tanto complementarios como compensatorios para evitar desequilibrios musculares debidos a las demandas físicas del propio deporte y creamos planes preventivos para evitar lesiones.
                             </p>
-                            <ul>
+                            <ul className={styles.customList}>
                                 <li>Entrega de una planificación semanal.</li>
                                 <li>Entreno personalizado.</li>
                                 <li>Enfocado 100% a sacar el máximo rendimiento personal.</li>
                                 <li>Sesiones adaptadas a tu deporte.</li>
-                                <li>Sesiones preventivas de lesiones en base al deporte que practicas.</li>
+                                <li>Sesiones preventivas (de lesiones) en base al deporte que practicas.</li>
                                 <li>Trabajo complementario y compensatorio.</li>
                                 <li>Feedback individualizado.</li>
                             </ul>
                             <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
+                            <p className={styles.contactMe}>¡Para más información contacta conmigo!</p>
                         </div>
                     </div>
                 </div>
