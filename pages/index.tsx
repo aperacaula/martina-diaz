@@ -98,7 +98,7 @@ const Home: React.FC = () => {
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faFireFlameCurved} />
             </div>
-            <h3 className={styles.sportsCard}>DEPORTE Basic</h3>
+            <h3 className={styles.sportsCard}>SPORTS Basic</h3>
             <p>
               Diseñado para personas deportistas que no cuentan con las herramientas para poder entrenar en base a su modalidad deportiva.
             </p>
@@ -111,7 +111,7 @@ const Home: React.FC = () => {
             <div className={styles.trainingIcon}>
               <FontAwesomeIcon icon={faMountain} />
             </div>
-            <h3>DEPORTE Pro</h3>
+            <h3>SPORTS Pro</h3>
             <p>
               Diseñado para deportistas y/o atletas profesionales o semi profesionales que de forma individual quieran optimizar su rendimiento.
             </p>
