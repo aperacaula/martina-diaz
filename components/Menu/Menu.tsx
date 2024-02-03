@@ -39,7 +39,6 @@ const Menu: React.FC<MenuProps> = ({ filledMenu }) => {
       </Link>
       <nav className={styles.menuItems}>
         <Accordion title="Entrenamientos" options={trainingOptions} filledMenu={filledMenu} />
-        <div className={styles.menuItem}><Link href="/tarifas">Tarifas</Link></div>
         <div className={styles.menuItem}><Link href="/conoceme">Conóceme</Link></div>
       </nav>
     </div>
