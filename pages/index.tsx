@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Layout from '../components/Layout/Layout';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFire, faFireFlameSimple, faFireFlameCurved, faMountain, faCopyright } from '@fortawesome/free-solid-svg-icons';
+import { faFire, faFireFlameSimple, faFireFlameCurved, faMountain, faCopyright, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import whatsapp from '../public/icons/icons8-whatsapp-color.svg';
 import { useState, useEffect } from 'react';
 
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
           <p className={styles.description}>
             ¿Piensas que un entrenador personal está fuera de tu alcance?
           <br /> Descubre cómo mis servicios online
-              hacen que la calidad <br /> sea accesible para todas las personas.
+                hacen que la calidad sea accesible para todas las personas.
           </p>
         </section>
 
@@ -127,11 +127,21 @@ const Home: React.FC = () => {
           <h2>Obtén tu rutina personalizada en 4 simples pasos:</h2>
           <div className={styles.steps}>
             <p><strong>PASO 1</strong>: <span className={styles.highlighted}>ENCUESTA INICIAL</span> (sobre el estilo de vida, historial y objetivos).</p>
+            <div className={styles.icon}>
+              <FontAwesomeIcon icon={faArrowDown} size="sm" />
+            </div>
             <p><strong>PASO 2</strong>: <span className={styles.highlighted}>CONTACTO CLIENTE</span> (para profundizar y aclarar detalles como horarios, gustos, preferencias…).</p>
+            <div className={styles.icon}>
+              <FontAwesomeIcon icon={faArrowDown} size="sm" />
+            </div>
             <p><strong>PASO 3</strong>: <span className={styles.highlighted}>VALORACIÓN INICIAL</span> (a través de test de calidad de movimiento, y musculatura estabilizadora; control composición corporal mediante perímetros antropométricos).</p>
+            <div className={styles.icon}>
+              <FontAwesomeIcon icon={faArrowDown} size="sm" />
+            </div>
             <p><strong>PASO 4</strong>: <span className={styles.highlighted}>ELABORACIÓN Y ENTREGA</span> (en 2-3 días de tu rutina personalizada).</p>
           </div>
         </section>
+        <hr className={styles.separator} />
         <section className={styles.quote}>
           <div className={styles.openingQuote}>“</div>
           <p>

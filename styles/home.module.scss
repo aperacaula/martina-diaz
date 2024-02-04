@@ -59,6 +59,7 @@
 .description {
   line-height: 1.5;
   font-size: $mediumFont;
+  width: 650px;
 }
 
 .grid {
@@ -123,6 +124,7 @@
   font-size: $smallFont;
   h2 {
     font-weight: normal;
+    margin-top: 0;
   }
   .steps {
     display: flex;
@@ -130,6 +132,16 @@
     align-items: center;
     text-align: center;
   }
+
+  .icon {
+    width: 15px;
+  }
+}
+
+.separator {
+  margin: 10px 0px;
+  color: $black;
+  width: 700px;
 }
 
 .quote {
@@ -186,9 +198,13 @@
 }
 
 @include mobile-or-less {
+  .intro {
+    padding-bottom: 0.5rem;
+  }
   .grid {
     width: 100%;
     flex-direction: column;
+    margin-top: 2rem;
   }
   .card {
     flex-basis: 100%;
@@ -198,5 +214,26 @@
   .whatsappSticky {
     bottom: 1rem;
     right: 1rem;
+  }
+
+  .description {
+    line-height: normal;
+    font-size: $smallerFont;
+    width: 100%;
+  }
+
+  .stepsContainer {
+    margin: 1vh 2vh;
+    h2 {
+      font-size: $mediumFont;
+    }
+  }
+
+  .separator {
+    width: 145px;
+  }
+
+  .quote {
+    margin: 1rem 0 4rem;
   }
 }
