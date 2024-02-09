@@ -35,7 +35,9 @@ const FitnessBasic: React.FC = () => {
               <p className={styles.remark}>*El número de sesiones de entrenamiento semanales será independiente al <strong>plan</strong> que se escoja. Es decir, dependerá de la disponibilidad de días que tengas durante la semana.</p>
               <p className={styles.contactMe}>¡Para más información contacta conmigo!</p>
             </div>
-            <Image src="/trainings/fitness-basic/fitness-basic.jpg" height={200} width={400} alt="Fitness Basic" loading="lazy" />
+            <div>
+              <Image src="/trainings/fitness-basic/fitness-basic.jpg" height={400} width={300} alt="Fitness Basic" loading="lazy" />
+            </div>
           </div>
         </div>
         <Link className={styles.goBack} href="/">

@@ -18,7 +18,9 @@ const FitnessPro: React.FC = () => {
         <h1>Fitness Pro training</h1>
         <div className={styles.explanation}>
           <div className={styles.textAndImage}>
-            <Image src="/trainings/fitness-pro/fitness-pro.jpg" width={400} height={500} alt="Fitness Pro" loading="lazy" />
+            <div>
+              <Image src="/trainings/fitness-pro/fitness-pro.jpg" height={400} width={300} alt="Fitness Basic" loading="lazy" />
+            </div>
             <div className={styles.text}>
               <p>
                 Ideal para aquellas personas que tienen experiencia en fitness. Este plan mejora tu rutina con entrenamiento personalizado, objetivos más concretos y con un seguimiento más detallado y preciso.

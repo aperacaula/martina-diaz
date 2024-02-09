@@ -18,7 +18,9 @@ const SportsPro: React.FC = () => {
                 <h1>Sports Pro training</h1>
                 <div className={styles.explanation}>
                     <div className={styles.textAndImage}>
-                        <Image src="/trainings/sports-pro/sports-pro.jpg" width={400} height={500} alt="Sports Pro" loading="lazy" />
+                        <div>
+                            <Image src="/trainings/sports-pro/sports-pro.jpg" height={400} width={350} alt="Fitness Basic" loading="lazy" />
+                        </div>
                         <div className={styles.text}>
                             <p>
                                 Diseñado para deportistas y/o atletas profesionales o semi profesionales que de forma individual quieran optimizar su rendimiento.  Este plan integral optimiza su rendimiento con un régimen de entrenamiento intenso y un seguimiento muy preciso del progreso.
