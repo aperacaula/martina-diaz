@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
+import image from "../../public/trainings/sports-pro/sports-pro.jpg";
 
 const SportsPro: React.FC = () => {
     return (
@@ -19,7 +20,7 @@ const SportsPro: React.FC = () => {
                 <div className={styles.explanation}>
                     <div className={styles.textAndImage}>
                         <div>
-                            <Image src="/trainings/sports-pro/sports-pro.jpg" height={400} width={350} alt="Fitness Basic" loading="lazy" />
+                            <Image src={image} placeholder="blur" height={400} width={350} alt="Fitness Basic" loading="lazy" />
                         </div>
                         <div className={styles.text}>
                             <p>

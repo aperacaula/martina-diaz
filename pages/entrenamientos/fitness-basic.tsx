@@ -5,6 +5,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
+import image from "../../public/trainings/fitness-basic/fitness-basic.jpg"
 
 const FitnessBasic: React.FC = () => {
   return (
@@ -36,7 +37,7 @@ const FitnessBasic: React.FC = () => {
               <p className={styles.contactMe}>¡Para más información contacta conmigo!</p>
             </div>
             <div>
-              <Image src="/trainings/fitness-basic/fitness-basic.jpg" height={400} width={300} alt="Fitness Basic" loading="lazy" />
+              <Image placeholder="blur" height={400} width={300} alt="Fitness Basic" src={image} />
             </div>
           </div>
         </div>

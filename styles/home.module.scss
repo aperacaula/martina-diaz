@@ -109,8 +109,7 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: $white;
-  background: linear-gradient($white, $primary);
+  background: linear-gradient($primary, $white);
 }
 
 .card h3 {

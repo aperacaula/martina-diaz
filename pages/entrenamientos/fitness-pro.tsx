@@ -5,6 +5,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
+import { getBlurData } from "../../utils/blur-data-generator";
+import image from '../../public/trainings/fitness-pro/fitness-pro.jpg'
 
 const FitnessPro: React.FC = () => {
   return (
@@ -19,7 +21,14 @@ const FitnessPro: React.FC = () => {
         <div className={styles.explanation}>
           <div className={styles.textAndImage}>
             <div>
-              <Image src="/trainings/fitness-pro/fitness-pro.jpg" height={400} width={300} alt="Fitness Basic" loading="lazy" />
+              <Image
+                placeholder="blur"
+                src={image}
+                height={400}
+                width={300}
+                alt="Fitness Basic"
+                priority
+              />
             </div>
             <div className={styles.text}>
               <p>

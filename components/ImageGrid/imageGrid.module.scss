@@ -1,0 +1,12 @@
+/* styles/globals.css or styles/ImageGrid.module.css */
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.imageItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
