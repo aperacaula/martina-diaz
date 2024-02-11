@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFire, faFireFlameSimple, faFireFlameCurved, faMountain, faCopyright, faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import whatsapp from '../public/icons/icons8-whatsapp-color.svg';
 import { useState, useEffect } from 'react';
+import image from "../public/background.jpg";
 
 const Home: React.FC = () => {
   const [reachedEnd, setReachedEnd] = useState(false);
@@ -46,11 +47,12 @@ const Home: React.FC = () => {
       <main className={styles.main}>
         <section className={styles.backgroundImage}>
           <Image
-            src="/background.jpg"
+            src={image}
             alt="Background Image"
             fill
             className={styles.image}
             priority={true}
+            placeholder="blur"
           />
         </section>
         <section className={styles.intro}>
@@ -68,7 +70,7 @@ const Home: React.FC = () => {
           <p className={styles.description}>
             ¿Piensas que un entrenador personal está fuera de tu alcance?
           <br /> Descubre cómo mis servicios online
-                hacen que la calidad sea accesible para todas las personas.
+                  hacen que la calidad sea accesible para todas las personas.
           </p>
         </section>
 

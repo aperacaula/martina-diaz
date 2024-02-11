@@ -27,7 +27,7 @@ const FitnessPro: React.FC = () => {
                 height={400}
                 width={300}
                 alt="Fitness Basic"
-                priority
+                priority={true}
               />
             </div>
             <div className={styles.text}>

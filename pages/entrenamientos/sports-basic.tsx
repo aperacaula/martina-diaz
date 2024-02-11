@@ -39,7 +39,7 @@ const SportsBasic: React.FC = () => {
                             <p className={styles.contactMe}>¡Para más información contacta conmigo!</p>
                         </div>
                         <div>
-                            <Image src={image} placeholder="blur" height={400} width={300} alt="Fitness Basic" />
+                            <Image src={image} placeholder="blur" height={400} width={300} alt="Fitness Basic" priority={true} />
                         </div>
                     </div>
                 </div>
