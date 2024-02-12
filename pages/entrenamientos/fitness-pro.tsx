@@ -5,7 +5,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
-import { getBlurData } from "../../utils/blur-data-generator";
 import image from '../../public/trainings/fitness-pro/fitness-pro.jpg'
 
 const FitnessPro: React.FC = () => {
