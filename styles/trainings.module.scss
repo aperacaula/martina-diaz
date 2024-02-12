@@ -71,7 +71,14 @@
     justify-content: flex-start;
     gap: 1.5rem;
   }
+
   .text {
     max-width: 100%;
+  }
+
+  .imageContainer {
+    img {
+      width: 100%;
+    }
   }
 }

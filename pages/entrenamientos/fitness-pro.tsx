@@ -19,7 +19,7 @@ const FitnessPro: React.FC = () => {
         <h1>Fitness Pro training</h1>
         <div className={styles.explanation}>
           <div className={styles.textAndImage}>
-            <div>
+            <div className={styles.imageContainer}>
               <Image
                 placeholder="blur"
                 src={image}
