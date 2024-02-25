@@ -1,11 +1,26 @@
 import Layout from "../components/Layout/Layout";
 import Head from "next/head";
+import Masonry from "react-masonry-css";
 import styles from "../styles/conoceme.module.scss"
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
 import image from "../public/profile.jpg";
+import martina1 from "../public/conoceme/Martina-1.jpg";
+import martina2 from "../public/conoceme/Martina-2.jpg";
+import martina3 from "../public/conoceme/Martina-3.jpg";
+import martina4 from "../public/conoceme/Martina-4.jpg";
+import martina5 from "../public/conoceme/Martina-5.jpg";
+
+const images = [martina1, martina3, martina2, martina4, martina5];
+
+const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+};
 
 const Conoceme: React.FC = () => {
     return (
@@ -22,6 +37,22 @@ const Conoceme: React.FC = () => {
                     <p><strong>
                         ¡Date esta oportunidad y únete a mí en este viaje hacia la mejor versión de ti mismo!</strong></p>
                 </section>
+                <Masonry
+                    breakpointCols={breakpointColumnsObj}
+                    className={styles.my_masonry_grid}
+                    columnClassName={styles.my_masonry_grid_column}
+                >
+                    {images.map((image, index) => (
+                        <div style={{ width: '100%' }}>
+                            <Image
+                                placeholder="blur"
+                                alt={`martina-${index}`}
+                                src={image}
+                                priority={true}
+                            />
+                        </div>
+                    ))}
+                </Masonry>
                 <Link className={styles.goBack} href="/">
                     <div className={styles.icon}>
                         <FontAwesomeIcon icon={faBackward} size="sm" />
