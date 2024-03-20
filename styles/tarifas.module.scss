@@ -1,0 +1,28 @@
+@import './_mixins.scss';
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.goBack {
+  margin: 5vh 0;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 10px;
+}
+
+@include mobile-or-less {
+  .container {
+    height: 50vh;
+  }
+}
