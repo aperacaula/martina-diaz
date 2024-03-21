@@ -10,7 +10,7 @@ const Conoceme: React.FC = () => {
     return (
         <Layout filledMenu={true}>
             <div className={styles.container}>
-                <Image alt="Tarifas" src="/tarifas.png" width={600} height={500} />
+                <Image alt="Tarifas" src="/tarifas.png" width={600} height={500} priority={true} placeholder="blur" />
                 <Link className={styles.goBack} href="/">
                     <div className={styles.icon}>
                         <FontAwesomeIcon icon={faBackward} size="sm" />
