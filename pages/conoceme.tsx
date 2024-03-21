@@ -43,7 +43,7 @@ const Conoceme: React.FC = () => {
                     columnClassName={styles.my_masonry_grid_column}
                 >
                     {images.map((image, index) => (
-                        <div style={{ width: '100%' }}>
+                        <div style={{ width: '100%' }} key={`martina-${index}`}>
                             <Image
                                 placeholder="blur"
                                 alt={`martina-${index}`}

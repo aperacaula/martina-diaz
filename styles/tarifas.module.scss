@@ -1,6 +1,7 @@
 @import './_mixins.scss';
 
 .container {
+  margin: 75px 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
